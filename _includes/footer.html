@@ -1,0 +1,148 @@
+<footer id="footer">
+  <div class="footer-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-lg-2 col-md-4">
+          <div
+            class="widget widget-contact-us"
+            style="
+              background-image: url('{{ site.baseurl }}/assets/images/world-map-dark.png');
+              background-position: 50% 20px;
+              background-repeat: no-repeat;
+            "
+          >
+            <h4>Về chúng tôi</h4>
+            <p class="mb-5">
+              NamGD.com cung cấp giải pháp linh hoạt đáp ứng mọi yêu cầu của
+              từng khách hàng ở nhiều khía cạnh khác nhau.
+            </p>
+            <ul class="list-icon">
+              <li>
+                <i class="fa fa-map-marker-alt"></i> Số 39, ngõ 46, đường Tân
+                Triều - Triều Khúc - Hà Đông - Hà Nội
+              </li>
+              <li><i class="fa fa-phone"></i> 0344.570.115</li>
+              <li>
+                <i class="far fa-envelope"></i>
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4">
+          <div class="widget">
+            <h4>Thời gian mở cửa</h4>
+            <ul class="list-icon">
+              <li>
+                <i class="far fa-clock"></i>Thứ 2 - Thứ 6:
+                <strong>08:00 - 22:00</strong>
+              </li>
+              <li>
+                <i class="far fa-clock"></i>Thứ 7, Chủ Nhật:
+                <strong>08:30 - 21:30</strong>
+              </li>
+            </ul>
+            <h4>Mạng Xã Hội</h4>
+            <div
+              class="
+                social-icons social-icons-colored social-icons-rounded
+                float-left
+              "
+            >
+              <ul>
+                <li class="social-facebook">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="social-instagram">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li li class="social-youtube">
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <form
+            class="widget-contact-form"
+            novalidate
+            action="include/contact-form.php"
+            role="form"
+            method="post"
+          >
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="fa fa-user"></i
+                ></span>
+              </div>
+              <input
+                type="text"
+                aria-required="true"
+                name="widget-contact-form-name"
+                class="form-control required name"
+                placeholder="Nhập tên của bạn"
+              />
+            </div>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="fa fa-envelope"></i
+                ></span>
+              </div>
+              <input
+                type="email"
+                aria-required="true"
+                required
+                name="widget-contact-form-email"
+                class="form-control required email"
+                placeholder="Nhập email của bạn"
+              />
+            </div>
+            <div class="form-group mb-2">
+              <textarea
+                type="text"
+                name="widget-contact-form-message"
+                rows="5"
+                class="form-control required"
+                placeholder="Nội dung"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="submit" id="form-submit">
+                <i class="fa fa-paper-plane"></i>&nbsp;Gửi ngay
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-text text-center">
+            &copy; 2018 NamGD.com. All Rights Reserved.<a
+              href="https://namgd.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              NamGD.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="scrollTop"
+  ><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i
+></a>
+
+<script src='{{ "/assets/js/jquery.js" | relative_url }}'></script>
+<script src='{{ "/assets/js/plugins.js" | relative_url }}'></script>
+
+<script src='{{ "/assets/js/functions.js" | relative_url }}'></script>

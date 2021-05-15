@@ -1,0 +1,92 @@
+<header
+  id="header"
+  data-transparent="true"
+  data-fullwidth="true"
+  data-responsive-fixed="true"
+  class="dark submenu-light"
+>
+  <div class="header-inner">
+    <div class="container">
+      <div id="logo">
+        <a href='{{ "/" | relative_url }}'>
+          <img
+            src="{{ site.baseurl }}/assets/images/logo.png"
+            alt="{{ site.title }}"
+          />
+        </a>
+      </div>
+
+      <div id="search">
+        <a
+          id="btn-search-close"
+          class="btn-search-close"
+          aria-label="Close search form"
+          ><i class="icon-x"></i
+        ></a>
+        <form class="search-form" action="#" method="get">
+          <input
+            class="form-control"
+            name="q"
+            type="text"
+            placeholder="Tìm kiếm..."
+          />
+          <span class="text-muted"
+            >Bắt đầu nhập và nhấn "Enter" hoặc "ESC" để đóng</span
+          >
+        </form>
+      </div>
+
+      <div class="header-extras">
+        <ul>
+          <li>
+            <a id="btn-search" href="#"> <i class="icon-search"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="mainMenu-trigger">
+        <a class="lines-button x"><span class="lines"></span></a>
+      </div>
+
+      <div id="mainMenu">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href='{{ "/" | relative_url }}'>Trang Chủ</a></li>
+              <li><a href='{{ "/" | relative_url }}'>Giới Thiệu</a></li>
+              <li class="dropdown">
+                <a href="#">Dịch Vụ Thiết Kế</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Thiết kế thương hiệu</a></li>
+                  <li><a href="#">Thiết kế đồ họa</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href='{{ "/" | relative_url }}'>Dịch Vụ Website</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Thiết kế Website</a></li>
+                  <li><a href="#">Thiết kế Landing Page</a></li>
+                  <li><a href="#">Quản trị và chăm sóc website</a></li>
+                  <li><a href="#">Mẫu Website</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#">Dịch Vụ Video</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Video Intro, Outtro 2D</a></li>
+                  <li><a href="#">Video Intro, Outtro 3D</a></li>
+                  <li><a href="#">Cắt ghép, chỉnh sửa, lồng nhạc Video</a></li>
+                  <li><a href="#">Video Quảng cáo sản phẩm</a></li>
+                  <li><a href="#">Video Animation</a></li>
+                  <li><a href="#">Video Graphy</a></li>
+                </ul>
+              </li>
+              <li><a href='{{ "/" | relative_url }}'>Dịch Vụ 3D Model</a></li>
+              <li><a href='{{ "/" | relative_url }}'>Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
