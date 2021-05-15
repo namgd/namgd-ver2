@@ -1,0 +1,19 @@
+slidemain:
+  - title: Slide trang chủ
+    slides:
+      - title: Dịch Vụ Thiết Kế Website Trọn Gói
+        description:
+          NamGD.com cung cấp dịch vụ Thiết Kế Web trọn gói giá rẻ với giao diện
+          đẹp, độc đáo, sáng tạo. Hệ thống tính năng website đầy đủ, mang tính
+          ứng dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
+        image: dich-vu-website.webp
+        url: /dich-vu-website/
+      - title: Dịch Vụ Thiết Kế Đồ Họa Chuyên Nghiệp
+        description:
+          Thiết kế đồ họa là một trong những thế mạnh của NamGD.com. Đây là dịch
+          vụ dành cho những khách hàng yêu cầu những hình ảnh không chỉ có giá
+          trị cao về mặt thẩm mỹ mà phải ấn tượng, sáng tạo, mang lại giá trị
+          biểu đạt về nội dung để phục vụ cho chiến dịch makerting, quảng cáo…
+          của doanh nghiệp.
+        image: dich-vu-thiet-ke.webp
+        url: /dich-vu-thiet-ke/

@@ -1,0 +1,52 @@
+dichvuthietke:
+  - title: Dịch Vụ Thiết Kế
+    url: /dich-vu-thiet-ke/
+    submenu:
+      - page: Thiết kế logo
+        url: /dich-vu-thiet-ke/thiet-ke-logo/
+      - page: Thiết kế profile
+        url: /dich-vu-thiet-ke/thiet-ke-profile/
+      - page: Thiết kế catalogue
+        url: /dich-vu-thiet-ke/thiet-ke-catalogue/
+      - page: Thiết kế brochure
+        url: /dich-vu-thiet-ke/thiet-ke-brochure/
+      - page: Thiết kế Card
+        url: /dich-vu-thiet-ke/thiet-ke-card/
+      - page: Thiết kế menu
+        url: /dich-vu-thiet-ke/thiet-ke-menu/
+      - page: Thiết kế banner
+        url: /dich-vu-thiet-ke/thiet-ke-banner/
+      - page: Thiết kế Infographic
+        url: /dich-vu-thiet-ke/thiet-ke-infographic/
+      - page: Thiết kế Poster
+        url: /dich-vu-thiet-ke/thiet-ke-poster/
+      - page: Thiết kế Standee
+        url: /dich-vu-thiet-ke/thiet-ke-standee/
+dichvuwebsite:
+  - title: Dịch Vụ Website
+    url: /dich-vu-website/
+    submenu:
+      - page: Thiết kế Website
+        url: /dich-vu-website/thiet-ke-website/
+      - page: Thiết kế Landing Page
+        url: /dich-vu-website/thiet-ke-landing-page/
+      - page: Quản trị và chăm sóc website
+        url: /dich-vu-website/quan-tri-va-cham-soc-website/
+      - page: Kho Giao Diện
+        url: /dich-vu-website/kho-giao-dien/
+dichvuvideo:
+  - title: Dịch Vụ Video
+    url: /dich-vu-video/
+    submenu:
+      - page: Video Intro, Outro 2D
+        url: /dich-vu-video/video-intro-outro-2d/
+      - page: Video Intro, Outro 3D
+        url: /dich-vu-video/video-intro-outro-3d/
+      - page: Chỉnh sửa Video
+        url: /dich-vu-video/chinh-sua-video/
+      - page: Video Quảng cáo sản phẩm
+        url: /dich-vu-video/video-quang-cao-san-pham/
+      - page: Video Animation
+        url: /dich-vu-video/video-animation/
+      - page: Video Graphy
+        url: /dich-vu-video/video-graphy/

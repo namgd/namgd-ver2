@@ -2,50 +2,35 @@
 layout: default
 ---
 
+<!-- Slide home -->
 <div
   id="slider"
   class="inspiro-slider slider-fullscreen dots-creative"
   data-fade="true"
 >
+  {% for item in site.data.slide_main.slidemain %} {% for slide in item.slides
+  %}
   <div
+    title="{{ slide.title | escape }}"
     class="slide kenburns"
-    data-bg-image="{{ site.baseurl }}/assets/images/slider/notgeneric_bg3.jpg"
+    data-bg-image="{{ site.baseurl }}/assets/images/slider/{{ slide.image | escape }}"
   >
     <div class="bg-overlay"></div>
     <div class="container">
       <div class="slide-captions text-center text-light">
-        <h1>Dịch Vụ Thiết Kế Website Trọn Gói</h1>
-        <p>
-          NamGD.com cung cấp dịch vụ Thiết Kế Web trọn gói giá rẻ với giao diện
-          đẹp, độc đáo, sáng tạo. Hệ thống tính năng website đầy đủ, mang tính
-          ứng dụng cao và phù hợp với từng cá nhân, doanh nghiệp.
-        </p>
-        <div><a href="#" class="btn">Xem Chi Tiết</a></div>
+        <h1 title="{{ slide.title | escape }}">{{ slide.title | escape }}</h1>
+        <p>{{ slide.description | escape }}</p>
+        <div>
+          <a href="{{ slide.url | relative_url }}" class="btn">Xem Chi Tiết</a>
+        </div>
       </div>
     </div>
   </div>
-
-  <div
-    class="slide kenburns"
-    data-bg-image="{{ site.baseurl }}/assets/images/slider/notgeneric_bg3.jpg"
-  >
-    <div class="bg-overlay"></div>
-    <div class="container">
-      <div class="slide-captions text-center text-light">
-        <h1>Dịch Vụ Thiết Kế Đồ Họa Chuyên Nghiệp</h1>
-        <p>
-          Thiết kế đồ họa là một trong những thế mạnh của NamGD.com. Đây là dịch
-          vụ dành cho những khách hàng yêu cầu những hình ảnh không chỉ có giá
-          trị cao về mặt thẩm mỹ mà phải ấn tượng, sáng tạo, mang lại giá trị
-          biểu đạt về nội dung để phục vụ cho chiến dịch makerting, quảng cáo…
-          của doanh nghiệp.
-        </p>
-        <div><a href="#" class="btn">Xem Chi Tiết</a></div>
-      </div>
-    </div>
-  </div>
+  {% endfor %} {% endfor %}
 </div>
+<!-- End slide home -->
 
+<!-- Section Welcome -->
 <section id="welcome" class="p-b-0">
   <div class="container">
     <div
@@ -65,13 +50,15 @@ layout: default
         <img
           class="img-fluid"
           src="{{ site.baseurl }}/assets/images/home/website.gif"
-          alt="Welcome to POLO"
+          alt="CHÀO MỪNG BẠN ĐẾN VỚI NAMGD.COM"
         />
       </div>
     </div>
   </div>
 </section>
+<!-- End Section Welcome -->
 
+<!-- DỊCH VỤ -->
 <section class="box-fancy section-fullwidth p-b-0">
   <div class="heading-text heading-section text-center" data-animate="fadeInUp">
     <h2>DỊCH VỤ</h2>
@@ -82,33 +69,63 @@ layout: default
       class="col-lg-3 text-center service__box"
       style="background-color: #e96060"
     >
-      <img src="{{ site.baseurl }}/assets/images/home/service-1.png" alt="" />
-      <h4>DỊCH VỤ THIẾT KẾ</h4>
+      <a href="{{ site.baseurl }}/dich-vu-thiet-ke/">
+        <div>
+          <img
+            src="{{ site.baseurl }}/assets/images/home/service-1.png"
+            alt=""
+          />
+          <h4>DỊCH VỤ THIẾT KẾ</h4>
+        </div>
+      </a>
     </div>
     <div
       class="col-lg-3 text-center service__box"
-      style="background-color: #9f849b"
+      style="background-color: #f3b15a"
     >
-      <img src="{{ site.baseurl }}/assets/images/home/service-2.png" alt="" />
-      <h4>DỊCH VỤ WEBSITE</h4>
+      <a href="{{ site.baseurl }}/dich-vu-website/">
+        <div>
+          <img
+            src="{{ site.baseurl }}/assets/images/home/service-2.png"
+            alt=""
+          />
+          <h4>DỊCH VỤ WEBSITE</h4>
+        </div>
+      </a>
     </div>
     <div
       class="col-lg-3 text-center service__box"
       style="background-color: #e96060"
     >
-      <img src="{{ site.baseurl }}/assets/images/home/service-3.png" alt="" />
-      <h4>DỊCH VỤ VIDEO</h4>
+      <a href="{{ site.baseurl }}/dich-vu-video/">
+        <div>
+          <img
+            src="{{ site.baseurl }}/assets/images/home/service-3.png"
+            alt=""
+          />
+          <h4>DỊCH VỤ VIDEO</h4>
+        </div>
+      </a>
     </div>
     <div
       class="col-lg-3 text-center service__box"
-      style="background-color: #9f849b"
+      style="background-color: #f3b15a"
     >
-      <img src="{{ site.baseurl }}/assets/images/home/service-4.png" alt="" />
-      <h4>DỊCH VỤ 3D MODEL</h4>
+      <a href="{{ site.baseurl }}/dich-vu-3d-model/">
+        <div>
+          <img
+            src="{{ site.baseurl }}/assets/images/home/service-4.png"
+            alt=""
+          />
+          <h4>DỊCH VỤ 3D MODEL</h4>
+        </div>
+      </a>
     </div>
   </div>
 </section>
+<!-- End DỊCH VỤ -->
 
+<!-- Why Choose -->
 <section>
   <div class="container">
     <div class="heading-text heading-section text-center">
@@ -122,7 +139,7 @@ layout: default
       <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="0">
         <div class="icon-box effect medium border small">
           <div class="icon">
-            <a href="#"><i class="fa fa-clock"></i></a>
+            <a><i class="fa fa-clock"></i></a>
           </div>
           <h3>Tiết kiệm thời gian</h3>
           <p>
@@ -135,7 +152,7 @@ layout: default
       <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="200">
         <div class="icon-box effect medium border small">
           <div class="icon">
-            <a href="#"><i class="fa fa-credit-card"></i></a>
+            <a><i class="fa fa-credit-card"></i></a>
           </div>
           <h3>Tiết kiệm chi phí</h3>
           <p>
@@ -149,7 +166,7 @@ layout: default
       <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="400">
         <div class="icon-box effect medium border small">
           <div class="icon">
-            <a href="#"><i class="fa fa-check"></i></a>
+            <a><i class="fa fa-check"></i></a>
           </div>
           <h3>Trở nên chuyên nghiệp</h3>
           <p>
@@ -163,7 +180,9 @@ layout: default
     </div>
   </div>
 </section>
+<!-- End Why Choose -->
 
+<!-- portfolio -->
 <section class="p-t-0">
   <div class="container">
     <div class="heading-text heading-section text-center">
@@ -176,181 +195,40 @@ layout: default
   </div>
   <div class="portfolio">
     <div id="portfolio" class="grid-layout portfolio-4-columns" data-margin="0">
+      {% for item in site.data.portfolio.portfolio %} {% for por in
+      item.portfolio-list %}
       <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
         <div class="portfolio-item-wrap">
           <div class="portfolio-image">
-            <a href="#"
+            <a
               ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/1.jpg"
-                alt=""
+                src="{{ site.baseurl }}/assets/images/portfolio/thumb/{{ por.image | escape }}"
+                alt="{{ por.title | escape }}"
+                title="{{ por.title | escape }}"
             /></a>
           </div>
           <div class="portfolio-description">
             <a
-              title="Paper Pouch!"
+              title="{{ por.title | escape }}"
               data-lightbox="image"
-              href="{{ site.baseurl }}/assets/images/portfolio/1.jpg"
+              href="{{ site.baseurl }}/assets/images/portfolio/{{ por.image | escape }}"
             >
               <i class="icon-maximize"></i>
             </a>
           </div>
         </div>
       </div>
-
-      <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-        <div class="portfolio-item-wrap">
-          <div class="portfolio-image">
-            <a href="#"
-              ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/2.jpg"
-                alt=""
-            /></a>
-          </div>
-          <div class="portfolio-description">
-            <a
-              title="Paper Pouch!"
-              data-lightbox="image"
-              href="{{ site.baseurl }}/assets/images/portfolio/2.jpg"
-            >
-              <i class="icon-maximize"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-        <div class="portfolio-item-wrap">
-          <div class="portfolio-image">
-            <a href="#"
-              ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/3.jpg"
-                alt=""
-            /></a>
-          </div>
-          <div class="portfolio-description">
-            <a
-              title="Paper Pouch!"
-              data-lightbox="image"
-              href="{{ site.baseurl }}/assets/images/portfolio/3.jpg"
-            >
-              <i class="icon-maximize"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-        <div class="portfolio-item-wrap">
-          <div class="portfolio-image">
-            <a href="#"
-              ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/4.jpg"
-                alt=""
-            /></a>
-          </div>
-          <div class="portfolio-description">
-            <a
-              title="Paper Pouch!"
-              data-lightbox="image"
-              href="{{ site.baseurl }}/assets/images/portfolio/4.jpg"
-            >
-              <i class="icon-maximize"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-        <div class="portfolio-item-wrap">
-          <div class="portfolio-image">
-            <a href="#"
-              ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/5.jpg"
-                alt=""
-            /></a>
-          </div>
-          <div class="portfolio-description">
-            <a
-              title="Paper Pouch!"
-              data-lightbox="image"
-              href="{{ site.baseurl }}/assets/images/portfolio/5.jpg"
-            >
-              <i class="icon-maximize"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-        <div class="portfolio-item-wrap">
-          <div class="portfolio-image">
-            <a href="#"
-              ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/6.jpg"
-                alt=""
-            /></a>
-          </div>
-          <div class="portfolio-description">
-            <a
-              title="Paper Pouch!"
-              data-lightbox="image"
-              href="{{ site.baseurl }}/assets/images/portfolio/6.jpg"
-            >
-              <i class="icon-maximize"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-        <div class="portfolio-item-wrap">
-          <div class="portfolio-image">
-            <a href="#"
-              ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/7.jpg"
-                alt=""
-            /></a>
-          </div>
-          <div class="portfolio-description">
-            <a
-              title="Paper Pouch!"
-              data-lightbox="image"
-              href="{{ site.baseurl }}/assets/images/portfolio/7.jpg"
-            >
-              <i class="icon-maximize"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
-        <div class="portfolio-item-wrap">
-          <div class="portfolio-image">
-            <a href="#"
-              ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/8.jpg"
-                alt=""
-            /></a>
-          </div>
-          <div class="portfolio-description">
-            <a
-              title="Paper Pouch!"
-              data-lightbox="image"
-              href="{{ site.baseurl }}/assets/images/portfolio/8.jpg"
-            >
-              <i class="icon-maximize"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+      {% endfor %} {% endfor %}
     </div>
   </div>
 </section>
+<!-- End portfolio -->
 
+<!-- parallax -->
 <section
   id="section3"
   class="p-t-100 p-b-100"
-  data-bg-parallax="{{ site.baseurl }}/assets/images/parallax/5.jpg"
+  data-bg-parallax="{{ site.baseurl }}/assets/images/parallax.webp"
 >
   <div class="container xs-text-center sm-text-center text-light">
     <div class="row">
@@ -417,7 +295,9 @@ layout: default
     </div>
   </div>
 </section>
+<!-- End parallax -->
 
+<!-- clients -->
 <section class="p-t-60">
   <div class="container">
     <div class="heading-text heading-section text-center">
@@ -487,3 +367,4 @@ layout: default
     </div>
   </div>
 </section>
+<!-- End clients -->

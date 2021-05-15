@@ -53,36 +53,76 @@
           <nav>
             <ul>
               <li><a href='{{ "/" | relative_url }}'>Trang Chủ</a></li>
-              <li><a href='{{ "/" | relative_url }}'>Giới Thiệu</a></li>
+              <li><a href="{{ site.baseurl }}/gioi-thieu/">Giới Thiệu</a></li>
+              {% for item in site.data.navigation_list.dichvuthietke %}
               <li class="dropdown">
-                <a href="#">Dịch Vụ Thiết Kế</a>
+                <a href="{{ item.url | relative_url }}"
+                  >{{ item.title | escape }}
+                  <i
+                    class="fa fa-angle-down"
+                    data-toggle="dropdown"
+                    aria-hidden="true"
+                  ></i>
+                </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Thiết kế thương hiệu</a></li>
-                  <li><a href="#">Thiết kế đồ họa</a></li>
+                  {% for entry in item.submenu %}
+                  <li>
+                    <a href="{{ entry.url | relative_url }}"
+                      >{{ entry.page | escape }}</a
+                    >
+                  </li>
+                  {% endfor %}
                 </ul>
               </li>
+              {% endfor %} {% for item in
+              site.data.navigation_list.dichvuwebsite %}
               <li class="dropdown">
-                <a href='{{ "/" | relative_url }}'>Dịch Vụ Website</a>
+                <a href="{{ item.url | relative_url }}"
+                  >{{ item.title | escape }}
+                  <i
+                    class="fa fa-angle-down"
+                    data-toggle="dropdown"
+                    aria-hidden="true"
+                  ></i>
+                </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Thiết kế Website</a></li>
-                  <li><a href="#">Thiết kế Landing Page</a></li>
-                  <li><a href="#">Quản trị và chăm sóc website</a></li>
-                  <li><a href="#">Mẫu Website</a></li>
+                  {% for entry in item.submenu %}
+                  <li>
+                    <a href="{{ entry.url | relative_url }}"
+                      >{{ entry.page | escape }}</a
+                    >
+                  </li>
+                  {% endfor %}
                 </ul>
               </li>
+              {% endfor %} {% for item in site.data.navigation_list.dichvuvideo
+              %}
               <li class="dropdown">
-                <a href="#">Dịch Vụ Video</a>
+                <a href="{{ item.url | relative_url }}"
+                  >{{ item.title | escape }}
+                  <i
+                    class="fa fa-angle-down"
+                    data-toggle="dropdown"
+                    aria-hidden="true"
+                  ></i>
+                </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Video Intro, Outtro 2D</a></li>
-                  <li><a href="#">Video Intro, Outtro 3D</a></li>
-                  <li><a href="#">Cắt ghép, chỉnh sửa, lồng nhạc Video</a></li>
-                  <li><a href="#">Video Quảng cáo sản phẩm</a></li>
-                  <li><a href="#">Video Animation</a></li>
-                  <li><a href="#">Video Graphy</a></li>
+                  {% for entry in item.submenu %}
+                  <li>
+                    <a href="{{ entry.url | relative_url }}"
+                      >{{ entry.page | escape }}</a
+                    >
+                  </li>
+                  {% endfor %}
                 </ul>
               </li>
-              <li><a href='{{ "/" | relative_url }}'>Dịch Vụ 3D Model</a></li>
-              <li><a href='{{ "/" | relative_url }}'>Liên Hệ</a></li>
+              {% endfor %}
+              <li>
+                <a href="{{ site.baseurl }}/dich-vu-3d-model/"
+                  >Dịch Vụ 3D Model</a
+                >
+              </li>
+              <li><a href="{{ site.baseurl }}/lien-he/">Liên Hệ</a></li>
             </ul>
           </nav>
         </div>
