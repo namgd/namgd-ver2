@@ -33,25 +33,29 @@ layout: default
 <!-- Section Welcome -->
 <section id="welcome" class="p-b-0">
   <div class="container">
-    <div
-      class="heading-text heading-section text-center m-b-40"
-      data-animate="fadeInUp"
-    >
-      <h2>CHÀO MỪNG BẠN ĐẾN VỚI NAMGD.COM</h2>
-      <span class="lead"
-        >NamGD.com đem lại cho khách hàng những giải pháp thương hiệu hoàn hảo,
-        những sản phẩm thiết kế đầy ấn tượng, mang lại sức hút và cái nhìn toàn
-        diện về lĩnh vực mà các doanh nghiệp đang hướng tới. Chúng tôi cam kết
-        đem lại lợi ích tối đa và hỗ trợ nhiệt tình cho khách hàng.</span
-      >
-    </div>
-    <div class="row" data-animate="fadeInUp">
-      <div class="col-lg-12 text-center">
-        <img
-          class="img-fluid"
-          src="{{ site.baseurl }}/assets/images/home/website.gif"
-          alt="CHÀO MỪNG BẠN ĐẾN VỚI NAMGD.COM"
-        />
+    <div class="row d-flex align-items-center" data-animate="fadeInUp">
+      <div class="col-lg-6 text-center">
+        <div
+          class="heading-text heading-section text-center m-b-40"
+          data-animate="fadeInUp"
+        >
+          <h2>CHÀO MỪNG BẠN ĐẾN VỚI NAMGD.COM</h2>
+          <span class="lead"
+            >NamGD.com đem lại cho khách hàng những giải pháp thương hiệu hoàn
+            hảo, những sản phẩm thiết kế đầy ấn tượng, mang lại sức hút và cái
+            nhìn toàn diện về lĩnh vực mà các doanh nghiệp đang hướng tới. Chúng
+            tôi cam kết đem lại lợi ích tối đa và hỗ trợ nhiệt tình cho khách
+            hàng.</span
+          >
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <video loop autoplay muted>
+          <source
+            src="{{ site.baseurl }}/assets/images/home/website.webm"
+            preload="none"
+          />
+        </video>
       </div>
     </div>
   </div>
@@ -128,7 +132,10 @@ layout: default
 <!-- Why Choose -->
 <section>
   <div class="container">
-    <div class="heading-text heading-section text-center">
+    <div
+      class="heading-text heading-section text-center"
+      data-animate="fadeInUp"
+    >
       <h2>VÌ SAO NÊN CHỌN CHÚNG TÔI?</h2>
       <p>
         Đến với dịch vụ thiết kế website tại NamGD.com, doanh nghiệp sẽ được
@@ -136,7 +143,7 @@ layout: default
       </p>
     </div>
     <div class="row">
-      <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="0">
+      <div class="col-lg-4" data-animate="fadeInUp">
         <div class="icon-box effect medium border small">
           <div class="icon">
             <a><i class="fa fa-clock"></i></a>
@@ -149,7 +156,7 @@ layout: default
           </p>
         </div>
       </div>
-      <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="200">
+      <div class="col-lg-4" data-animate="fadeInUp">
         <div class="icon-box effect medium border small">
           <div class="icon">
             <a><i class="fa fa-credit-card"></i></a>
@@ -163,7 +170,7 @@ layout: default
           </p>
         </div>
       </div>
-      <div class="col-lg-4" data-animate="fadeInUp" data-animate-delay="400">
+      <div class="col-lg-4" data-animate="fadeInUp">
         <div class="icon-box effect medium border small">
           <div class="icon">
             <a><i class="fa fa-check"></i></a>
@@ -185,7 +192,10 @@ layout: default
 <!-- portfolio -->
 <section class="p-t-0">
   <div class="container">
-    <div class="heading-text heading-section text-center">
+    <div
+      class="heading-text heading-section text-center"
+      data-animate="fadeInUp"
+    >
       <h2>SẢN PHẨM ĐÃ THỰC HIỆN</h2>
       <span class="lead">
         Dưới đây là một số sản phẩm đã thực hiện của chúng tôi, bạn có thể vào
@@ -193,8 +203,8 @@ layout: default
       </span>
     </div>
   </div>
-  <div class="portfolio">
-    <div id="portfolio" class="grid-layout portfolio-4-columns" data-margin="0">
+  <div class="portfolio" data-animate="fadeInUp">
+    <div id="portfolio" class="grid-layout portfolio-4-columns">
       {% for item in site.data.portfolio.portfolio %} {% for por in
       item.portfolio-list %}
       <div class="portfolio-item img-zoom ct-photography ct-marketing ct-media">
@@ -229,6 +239,7 @@ layout: default
   id="section3"
   class="p-t-100 p-b-100"
   data-bg-parallax="{{ site.baseurl }}/assets/images/parallax.webp"
+  data-animate="fadeInUp"
 >
   <div class="container xs-text-center sm-text-center text-light">
     <div class="row">
@@ -299,7 +310,7 @@ layout: default
 
 <!-- clients -->
 <section class="p-t-60">
-  <div class="container">
+  <div class="container" data-animate="fadeInUp">
     <div class="heading-text heading-section text-center">
       <h2>ĐỐI TÁC – KHÁCH HÀNG CỦA NAMGD.COM</h2>
       <span class="lead"
