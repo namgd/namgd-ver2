@@ -26,7 +26,38 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://namgd.com" # the base hostname & protocol for your site, e.g. http://example.com
 lang: vi
 future: true
-
+keywords:
+  [
+    web,
+    Website,
+    thiết kế web,
+    thiết kế website,
+    làm web,
+    làm trang web,
+    thiết kế web chuẩn seo,
+    công ty thiết kế website,
+    thiết kế website chuyên nghiệp,
+    tạo web,
+    tạo website bán hàng chuyên ngiệp,
+    website giá rẻ,
+    giá thiết kế website,
+    thiết kế đồ họa,
+    giá thiết kế đồ họa,
+    thiết kế logo,
+    thiết kế banner,
+    thiết kế poster,
+    Thiết kế profile,
+    Thiết kế catalogue,
+    Thiết kế brochure,
+    Thiết kế Card,
+    Thiết kế menu,
+    Thiết kế Infographic,
+    Thiết kế Poster,
+    Thiết kế Standee,
+    Thiết kế Landing Page,
+    Quản trị và chăm sóc website,
+    Chỉnh sửa Video,
+  ]
 # Build settings
 theme: minima
 plugins:
