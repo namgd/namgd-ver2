@@ -16913,3 +16913,13 @@ body[data-bg-image] {
     height: auto;
     margin-bottom: 20px;
 }
+
+.btn-ct-black {
+    background-color: #000!important;
+    border-color: #000!important;
+}
+
+.btn-ct-black:hover {
+    background-color: #e04f4f!important;
+    border-color: #e04f4f!important;
+}
