@@ -16914,6 +16914,12 @@ body[data-bg-image] {
     margin-bottom: 20px;
 }
 
+.service__box h3 {
+    font-size: 1.35714286em;
+    line-height: 1.68421053em;
+    font-weight: 600;
+}
+
 .btn-ct-black {
     background-color: #000!important;
     border-color: #000!important;
