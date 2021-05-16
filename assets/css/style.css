@@ -16910,5 +16910,6 @@ body[data-bg-image] {
 /* My CSS */
 .service__box img {
     width: 100px;
+    height: auto;
     margin-bottom: 20px;
 }
