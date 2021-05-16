@@ -76,9 +76,9 @@ layout: default
       <a href="{{ site.baseurl }}/dich-vu-thiet-ke/">
         <div>
           <img
-            src="{{ site.baseurl }}/assets/images/home/service-1.png"
+            data-src="{{ site.baseurl }}/assets/images/home/service-1.png"
             alt="DỊCH VỤ THIẾT KẾ"
-            loading="lazy"
+            class="lazyload"
           />
           <h4>DỊCH VỤ THIẾT KẾ</h4>
         </div>
@@ -91,9 +91,9 @@ layout: default
       <a href="{{ site.baseurl }}/dich-vu-website/">
         <div>
           <img
-            src="{{ site.baseurl }}/assets/images/home/service-2.png"
+            data-src="{{ site.baseurl }}/assets/images/home/service-2.png"
             alt="DỊCH VỤ WEBSITE"
-            loading="lazy"
+            class="lazyload"
           />
           <h4>DỊCH VỤ WEBSITE</h4>
         </div>
@@ -106,9 +106,9 @@ layout: default
       <a href="{{ site.baseurl }}/dich-vu-video/">
         <div>
           <img
-            src="{{ site.baseurl }}/assets/images/home/service-3.png"
+            data-src="{{ site.baseurl }}/assets/images/home/service-3.png"
             alt="DỊCH VỤ VIDEO"
-            loading="lazy"
+            class="lazyload"
           />
           <h4>DỊCH VỤ VIDEO</h4>
         </div>
@@ -121,9 +121,9 @@ layout: default
       <a href="{{ site.baseurl }}/dich-vu-3d-model/">
         <div>
           <img
-            src="{{ site.baseurl }}/assets/images/home/service-4.png"
+            data-src="{{ site.baseurl }}/assets/images/home/service-4.png"
             alt="DỊCH VỤ 3D MODEL"
-            loading="lazy"
+            class="lazyload"
           />
           <h4>DỊCH VỤ 3D MODEL</h4>
         </div>
@@ -216,9 +216,10 @@ layout: default
           <div class="portfolio-image">
             <a
               ><img
-                src="{{ site.baseurl }}/assets/images/portfolio/thumb/{{ por.image | escape }}"
+                src="{{ site.baseurl }}/assets/images/portfolio/thumb/bg-thumb.svg"
+                data-src="{{ site.baseurl }}/assets/images/portfolio/thumb/{{ por.image | escape }}"
                 alt="{{ por.title | escape }}"
-                loading="lazy"
+                class="lazyload"
                 title="{{ por.title | escape }}"
             /></a>
           </div>
