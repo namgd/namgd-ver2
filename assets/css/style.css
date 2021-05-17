@@ -16930,3 +16930,49 @@ body[data-bg-image] {
     background-color: #e04f4f!important;
     border-color: #e04f4f!important;
 }
+
+/* table-price */
+.table-price {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-price>thead>tr>th {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom-width: 1px;
+    border-color: #e5e4ec;
+}
+
+.table-price>tbody>.tr-main {
+    background-color: #f4f6f8;
+}
+
+.table-price tbody tr:hover {
+    background: #f4f6f8;
+    color: #000;
+}
+
+.table-price>tbody>tr>th {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #000;
+    border-color: #e5e4ec;
+}
+
+.table-price>tbody>tr>td {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000;
+    border-color: #e5e4ec;
+}
+
+.table-price>tbody>tr>td>.fa-check-circle {
+    color: #2aa200;
+}
+/* end table-price */
