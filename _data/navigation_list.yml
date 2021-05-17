@@ -32,8 +32,6 @@ dichvuwebsite:
         url: /dich-vu-website/thiet-ke-landing-page/
       - page: Quản trị và chăm sóc website
         url: /dich-vu-website/quan-tri-va-cham-soc-website/
-      - page: Kho Giao Diện
-        url: /dich-vu-website/kho-giao-dien/
 dichvuvideo:
   - title: Dịch Vụ Video
     url: /dich-vu-video/

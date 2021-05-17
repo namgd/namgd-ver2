@@ -41,7 +41,9 @@
       <div class="header-extras">
         <ul>
           <li>
-            <a id="btn-search" href='{{ "/" | relative_url }}'> <i class="icon-search"></i></a>
+            <a id="btn-search" href='{{ "/" | relative_url }}'>
+              <i class="icon-search"></i
+            ></a>
           </li>
         </ul>
       </div>
@@ -56,7 +58,7 @@
             <ul>
               <li><a href='{{ "/" | relative_url }}'>Trang Chủ</a></li>
               <li><a href="{{ site.baseurl }}/gioi-thieu/">Giới Thiệu</a></li>
-              {% for item in site.data.navigation_list.dichvuthietke %}
+              <!-- {% for item in site.data.navigation_list.dichvuthietke %}
               <li class="dropdown">
                 <a href="{{ item.url | relative_url }}"
                   >{{ item.title | escape }}
@@ -76,8 +78,8 @@
                   {% endfor %}
                 </ul>
               </li>
-              {% endfor %} {% for item in
-              site.data.navigation_list.dichvuwebsite %}
+              {% endfor %} -->
+              {% for item in site.data.navigation_list.dichvuwebsite %}
               <li class="dropdown">
                 <a href="{{ item.url | relative_url }}"
                   >{{ item.title | escape }}
@@ -97,7 +99,7 @@
                   {% endfor %}
                 </ul>
               </li>
-              {% endfor %} {% for item in site.data.navigation_list.dichvuvideo
+              <!-- {% endfor %} {% for item in site.data.navigation_list.dichvuvideo
               %}
               <li class="dropdown">
                 <a href="{{ item.url | relative_url }}"
@@ -123,7 +125,7 @@
                 <a href="{{ site.baseurl }}/dich-vu-3d-model/"
                   >Dịch Vụ 3D Model</a
                 >
-              </li>
+              </li> -->
               <li><a href="{{ site.baseurl }}/lien-he/">Liên Hệ</a></li>
             </ul>
           </nav>
